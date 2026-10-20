@@ -1,0 +1,54 @@
+%YAML 1.1
+---
+version: https://codecheck.org.uk/spec/config/2.0/
+
+# Metadata created retrospectively in 2026 from the published certificate
+# (https://doi.org/10.5281/zenodo.5543112) and its Zenodo record.
+# The original codecheck outputs were not archived separately; the reproduced
+# figures in codecheck/ were extracted from the certificate PDF, which is
+# included as codecheck/codecheck.pdf.
+manifest:
+  - file: codecheck/figure_3.png
+    comment: "Figure 3 in the poster; design-related deviations caused by the aspect ratio, difference in the correlation likely a rounding error"
+  - file: codecheck/figure_4.png
+    comment: "Figure 4 in the poster; design-related deviations caused by the aspect ratio, difference in the correlation likely a rounding error"
+
+paper:
+  title: "Population census estimation for Spatial Microsimulation"
+  authors:
+    - name: Néstor de la Paz Ruíz
+      ORCID: 0000-0002-8941-4677
+    - name: Ellen-Wien Augustijn
+      ORCID: 0000-0002-3389-7585
+    - name: Mahdi Farnaghi
+      ORCID: 0000-0002-3071-5563
+    - name: Raul Zurita-Milla
+      ORCID: 0000-0002-1769-6310
+  # The checked work is a poster presented at the International Conference on
+  # Geospatial Information Sciences (IGISc 2021, November 3-5, 2021, Mexico).
+  reference: https://doi.org/10.5281/zenodo.14175899
+
+source: >
+  Code and data from the GitHub repository delapazruiz/population.modelling.hue2010. The changes
+  made during the check were merged via https://github.com/delapazruiz/population.modelling.hue2010/pull/1
+  and are included in release v1.0.0 (https://doi.org/10.5281/zenodo.5558638). The codechecker's fork
+  was deleted later; an archived snapshot is listed under repository.
+
+codechecker:
+  - name: Markus Konkol
+    ORCID: 0000-0001-6651-0976
+
+report: https://doi.org/10.5281/zenodo.5543112
+
+summary: |
+  The reproduction was successful. The author followed good scientific practice and provided open code and open data via a GitHub repository. The two relevant figures from the poster could be reproduced with only minor design-related deviations from the figures reported in the poster, caused by a different aspect ratio. The author demonstrated concern for the reproducibility of the work by improving the code throughout the review process.
+
+repository:
+  - https://github.com/delapazruiz/population.modelling.hue2010
+  - https://doi.org/10.5281/zenodo.5558638
+  - https://research.utwente.nl/en/publications/poster-population-census-estimation-for-spatial-microsimulation/
+  - https://web.archive.org/web/20250324113319/https://github.com/MarkusKonk/population.modelling.hue2010
+
+check_time: "2021-10-01"
+
+certificate: 2021-012

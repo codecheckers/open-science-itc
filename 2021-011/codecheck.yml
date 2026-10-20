@@ -1,0 +1,64 @@
+%YAML 1.1
+---
+version: https://codecheck.org.uk/spec/config/2.0/
+
+# Metadata created retrospectively in 2026 from the published certificate
+# (https://doi.org/10.5281/zenodo.5106408) and its Zenodo record.
+# The original codecheck outputs were not archived separately; the reproduced
+# figures in codecheck/ were extracted from the certificate PDF (left-hand
+# figure of each comparison), which is included as codecheck/codecheck.pdf.
+manifest:
+  - file: codecheck/figure_3.png
+    comment: "Figure 3 in the paper; slight deviations in the left part (e.g., the two highest bars), right part seems identical"
+  - file: codecheck/figure_4.png
+    comment: "Figure 4 in the paper; deviations on the right side likely caused by different scales due to deviations in the left part"
+  - file: codecheck/figure_5.png
+    comment: "Figure 5 in the paper; figures seem to be equal"
+  - file: codecheck/figure_6.png
+    comment: "Figure 6 in the paper; figures seem to be equal"
+  - file: codecheck/figure_7.png
+    comment: "Figure 7 in the paper; figures seem to be equal"
+  - file: codecheck/figure_8.png
+    comment: "Figure 8 in the paper; figures seem to be equal"
+  - file: codecheck/figure_9.png
+    comment: "Figure 9 in the paper; figures seem to be equal"
+  - file: codecheck/figure_A1.png
+    comment: "Figure A1 in the paper; figures seem to be equal, deviations likely caused by differences in the scale"
+  - file: codecheck/figure_A2.png
+    comment: "Figure A2 in the paper; figures seem to be equal, deviations likely caused by differences in the scale"
+
+paper:
+  title: "Google Earth Engine Sentinel-3 OLCI Level-1 Dataset Deviates from the Original Data: Causes and Consequences"
+  authors:
+    - name: Egor Prikaziuk
+      ORCID: 0000-0002-7331-7004
+    - name: Peiqi Yang
+      ORCID: 0000-0003-4377-8560
+    - name: Christiaan van der Tol
+      ORCID: 0000-0002-2484-8191
+  reference: https://doi.org/10.3390/rs13061098
+
+source: >
+  Code from the GitHub repository Prikaziuk/S3_loader, data (extracted pixels) from DANS EASY
+  (https://doi.org/10.17026/dans-xb8-efke). The codechecker's fork with the changes made during
+  the check (merged via https://github.com/Prikaziuk/S3_loader/pull/1) was deleted later; an
+  archived snapshot is listed under repository.
+
+codechecker:
+  - name: Markus Konkol
+    ORCID: 0000-0001-6651-0976
+
+report: https://doi.org/10.5281/zenodo.5106408
+
+summary: |
+  The reproduction was successful. The authors followed good scientific practice and provided open code via a GitHub repository and open data via DANS Easy. After some clarification with the corresponding author, all relevant figures from the paper could be reproduced with only minor deviations from the figures reported in the paper. The author demonstrated concern for the reproducibility of the work by improving the code throughout the review process.
+
+repository:
+  - https://github.com/Prikaziuk/S3_loader
+  - https://doi.org/10.17026/dans-xb8-efke
+  - https://web.archive.org/web/20240604014909/https://github.com/MarkusKonk/S3_loader
+
+# certificate does not state a date of check; publication date of the certificate
+check_time: "2021-07-15"
+
+certificate: 2021-011

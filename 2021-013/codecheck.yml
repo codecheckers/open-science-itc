@@ -1,0 +1,79 @@
+%YAML 1.1
+---
+version: https://codecheck.org.uk/spec/config/2.0/
+
+# Metadata created retrospectively in 2026 from the published certificate
+# (https://doi.org/10.5281/zenodo.5574909) and its Zenodo record.
+# The original codecheck outputs were not archived separately; the reproduced
+# figures in codecheck/ were extracted from the certificate PDF (left-hand
+# "Reproduced" figure of each comparison), which is included as
+# codecheck/codecheck.pdf.
+# Only Figures 4 and 5 out of the three relevant figures of the paper were
+# reproducible; deviations are caused by randomness in the code.
+manifest:
+  - file: codecheck/figure_4a.png
+    comment: "Figure 4a in the paper"
+  - file: codecheck/figure_4b.png
+    comment: "Figure 4b in the paper"
+  - file: codecheck/figure_4c.png
+    comment: "Figure 4c in the paper"
+  - file: codecheck/figure_4d.png
+    comment: "Figure 4d in the paper"
+  - file: codecheck/figure_4e.png
+    comment: "Figure 4e in the paper"
+  - file: codecheck/figure_4f.png
+    comment: "Figure 4f in the paper"
+  - file: codecheck/figure_4g.png
+    comment: "Figure 4g in the paper"
+  - file: codecheck/figure_4h.png
+    comment: "Figure 4h in the paper"
+  - file: codecheck/figure_5a.png
+    comment: "Figure 5a in the paper"
+  - file: codecheck/figure_5b.png
+    comment: "Figure 5b in the paper"
+  - file: codecheck/figure_5c.png
+    comment: "Figure 5c in the paper"
+  - file: codecheck/figure_5d.png
+    comment: "Figure 5d in the paper"
+  - file: codecheck/figure_5e.png
+    comment: "Figure 5e in the paper"
+  - file: codecheck/figure_5f.png
+    comment: "Figure 5f in the paper"
+  - file: codecheck/figure_5g.png
+    comment: "Figure 5g in the paper"
+  - file: codecheck/figure_5h.png
+    comment: "Figure 5h in the paper"
+
+paper:
+  title: "When is variable importance estimation in species distribution modelling affected by spatial correlation?"
+  # Author order as in the article (matching Crossref); the corresponding
+  # author is T. A. Groen.
+  authors:
+    - name: Nivedita Varma Harisena
+      ORCID: 0000-0002-0135-0841
+    - name: Thomas A. Groen
+      ORCID: 0000-0001-6333-2553
+    - name: A. G. Toxopeus
+      ORCID: 0000-0001-9446-9245
+    - name: Babak Naimi
+      ORCID: 0000-0001-5431-2729
+  reference: https://doi.org/10.1111/ecog.05534
+
+source: >
+  The authors provided the code to the codechecker via a link to a shared folder. The code was
+  subsequently published as supplementary material on 4TU.ResearchData (https://doi.org/10.4121/16752223).
+
+codechecker:
+  - name: Markus Konkol
+    ORCID: 0000-0001-6651-0976
+
+report: https://doi.org/10.5281/zenodo.5574909
+
+summary: |
+  The reproduction was (partially) successful. The authors provided the source code via a link to a shared folder. From the three relevant figures in the paper, two were reproducible (Figure 4 and 5) with only minor deviations from the corresponding figures reported in the paper. The deviations were caused by randomness. The authors demonstrated concern for the reproducibility of their work by improving the code and responding to requests throughout the review process.
+
+repository: https://doi.org/10.4121/16752223
+
+check_time: "2021-10-18"
+
+certificate: 2021-013
